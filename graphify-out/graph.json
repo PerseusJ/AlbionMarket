@@ -1,0 +1,1120 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "plugin_bootstrap_flow",
+        "label": "Plugin Bootstrap Flow",
+        "nodes": [
+          "albionmarket_albionmarket_onEnable",
+          "managers_pluginmanager_getInstance",
+          "managers_pluginmanager_initialize",
+          "listeners_playerlistener_PlayerListener"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "C:\\Projects\\AlbionMarket\\src\\main\\java\\com\\perseus\\albionmarket\\AlbionMarket.java"
+      },
+      {
+        "id": "plugin_lifecycle_hooks",
+        "label": "Bukkit Plugin Lifecycle Hooks",
+        "nodes": [
+          "albionmarket_albionmarket_AlbionMarket",
+          "albionmarket_albionmarket_onEnable",
+          "albionmarket_albionmarket_onDisable"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "C:\\Projects\\AlbionMarket\\src\\main\\java\\com\\perseus\\albionmarket\\AlbionMarket.java"
+      },
+      {
+        "id": "graphify_injection_reminder_flow",
+        "label": "Graphify Injection Reminder Mechanism",
+        "nodes": [
+          "opencode_opencode_config",
+          "plugins_graphify_graphifyplugin",
+          "plugins_graphify_knowledge_graph"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": ".opencode/plugins/graphify.js"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "opencode.json",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "opencode_opencode",
+      "community": 6,
+      "norm_label": "opencode.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "opencode_opencode_schema",
+      "community": 6,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "plugin",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "opencode_opencode_plugin",
+      "community": 6,
+      "norm_label": "plugin"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "opencode_package",
+      "community": 7,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "opencode_package_dependencies",
+      "community": 7,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@opencode-ai/plugin",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "opencode_package_dependencies_opencode_ai_plugin",
+      "community": 7,
+      "norm_label": "@opencode-ai/plugin"
+    },
+    {
+      "label": "graphify.js",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plugins_graphify",
+      "community": 3,
+      "norm_label": "graphify.js"
+    },
+    {
+      "label": "GraphifyPlugin()",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "plugins_graphify_graphifyplugin",
+      "community": 3,
+      "norm_label": "graphifyplugin()"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vscode_settings",
+      "community": 9,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "java.compile.nullAnalysis.mode",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "vscode_settings_java_compile_nullanalysis_mode",
+      "community": 9,
+      "norm_label": "java.compile.nullanalysis.mode"
+    },
+    {
+      "label": "AlbionMarket.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "albionmarket_albionmarket",
+      "community": 2,
+      "norm_label": "albionmarket.java"
+    },
+    {
+      "label": "AlbionMarket",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "albionmarket_albionmarket_albionmarket",
+      "community": 2,
+      "norm_label": "albionmarket"
+    },
+    {
+      "label": "JavaPlugin",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "javaplugin",
+      "community": 2,
+      "norm_label": "javaplugin"
+    },
+    {
+      "label": ".onEnable()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "albionmarket_albionmarket_albionmarket_onenable",
+      "community": 0,
+      "norm_label": ".onenable()"
+    },
+    {
+      "label": "Override",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "override",
+      "community": 0,
+      "norm_label": "override"
+    },
+    {
+      "label": ".onDisable()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "albionmarket_albionmarket_albionmarket_ondisable",
+      "community": 0,
+      "norm_label": ".ondisable()"
+    },
+    {
+      "label": "PlayerListener.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "listeners_playerlistener",
+      "community": 1,
+      "norm_label": "playerlistener.java"
+    },
+    {
+      "label": "PlayerListener",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "listeners_playerlistener_playerlistener",
+      "community": 1,
+      "norm_label": "playerlistener"
+    },
+    {
+      "label": "Listener",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "listener",
+      "community": 1,
+      "norm_label": "listener"
+    },
+    {
+      "label": ".onPlayerJoin()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "listeners_playerlistener_playerlistener_onplayerjoin",
+      "community": 1,
+      "norm_label": ".onplayerjoin()"
+    },
+    {
+      "label": "PlayerJoinEvent",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "playerjoinevent",
+      "community": 1,
+      "norm_label": "playerjoinevent"
+    },
+    {
+      "label": "EventHandler",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "eventhandler",
+      "community": 1,
+      "norm_label": "eventhandler"
+    },
+    {
+      "label": "PluginManager.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "managers_pluginmanager",
+      "community": 0,
+      "norm_label": "pluginmanager.java"
+    },
+    {
+      "label": "PluginManager",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "managers_pluginmanager_pluginmanager",
+      "community": 0,
+      "norm_label": "pluginmanager"
+    },
+    {
+      "label": ".getInstance()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "managers_pluginmanager_pluginmanager_getinstance",
+      "community": 0,
+      "norm_label": ".getinstance()"
+    },
+    {
+      "label": ".initialize()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "managers_pluginmanager_pluginmanager_initialize",
+      "community": 0,
+      "norm_label": ".initialize()"
+    },
+    {
+      "label": "Utils.java",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "utils_utils",
+      "community": 4,
+      "norm_label": "utils.java"
+    },
+    {
+      "label": "Utils",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "utils_utils_utils",
+      "community": 4,
+      "norm_label": "utils"
+    },
+    {
+      "label": ".colorize()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "utils_utils_utils_colorize",
+      "community": 4,
+      "norm_label": ".colorize()"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "string",
+      "community": 4,
+      "norm_label": "string"
+    },
+    {
+      "label": "AlbionMarket.onEnable",
+      "file_type": "code",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "10-19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "albionmarket_albionmarket_onEnable",
+      "community": 5,
+      "norm_label": "albionmarket.onenable"
+    },
+    {
+      "label": "AlbionMarket.onDisable",
+      "file_type": "code",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "22-24",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "albionmarket_albionmarket_onDisable",
+      "community": 10,
+      "norm_label": "albionmarket.ondisable"
+    },
+    {
+      "label": "PlayerListener.onPlayerJoin",
+      "file_type": "code",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "10-12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "listeners_playerlistener_onPlayerJoin",
+      "community": 1,
+      "norm_label": "playerlistener.onplayerjoin"
+    },
+    {
+      "label": "Bukkit event listener pattern",
+      "file_type": "concept",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_event_listener_pattern",
+      "community": 1,
+      "norm_label": "bukkit event listener pattern"
+    },
+    {
+      "label": "PluginManager.getInstance",
+      "file_type": "code",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "6-11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "managers_pluginmanager_getInstance",
+      "community": 5,
+      "norm_label": "pluginmanager.getinstance"
+    },
+    {
+      "label": "PluginManager.initialize",
+      "file_type": "code",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "13-15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "managers_pluginmanager_initialize",
+      "community": 5,
+      "norm_label": "pluginmanager.initialize"
+    },
+    {
+      "label": "Singleton pattern",
+      "file_type": "concept",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_singleton_pattern",
+      "community": 0,
+      "norm_label": "singleton pattern"
+    },
+    {
+      "label": "Utils.colorize",
+      "file_type": "code",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "9-17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "utils_utils_colorize",
+      "community": 8,
+      "norm_label": "utils.colorize"
+    },
+    {
+      "label": "Hex color parsing in chat messages",
+      "file_type": "concept",
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_hex_chat_color",
+      "community": 8,
+      "norm_label": "hex color parsing in chat messages"
+    },
+    {
+      "label": "AlbionMarket plugin descriptor",
+      "file_type": "document",
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "PerseusJ",
+      "contributor": null,
+      "id": "resources_plugin_albionmarket",
+      "community": 2,
+      "norm_label": "albionmarket plugin descriptor"
+    },
+    {
+      "label": "Vault (hard dependency)",
+      "file_type": "document",
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "6",
+      "source_url": null,
+      "captured_at": null,
+      "author": "PerseusJ",
+      "contributor": null,
+      "id": "resources_plugin_vault",
+      "community": 2,
+      "norm_label": "vault (hard dependency)"
+    },
+    {
+      "label": "Citizens (soft dependency)",
+      "file_type": "document",
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "7",
+      "source_url": null,
+      "captured_at": null,
+      "author": "PerseusJ",
+      "contributor": null,
+      "id": "resources_plugin_citizens",
+      "community": 2,
+      "norm_label": "citizens (soft dependency)"
+    },
+    {
+      "label": "PlaceholderAPI (soft dependency)",
+      "file_type": "document",
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "7",
+      "source_url": null,
+      "captured_at": null,
+      "author": "PerseusJ",
+      "contributor": null,
+      "id": "resources_plugin_placeholderapi",
+      "community": 2,
+      "norm_label": "placeholderapi (soft dependency)"
+    },
+    {
+      "label": "OpenCode Configuration",
+      "file_type": "document",
+      "source_file": ".opencode/opencode.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "opencode_opencode_config",
+      "community": 3,
+      "norm_label": "opencode configuration"
+    },
+    {
+      "label": "Package Dependencies",
+      "file_type": "document",
+      "source_file": ".opencode/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "opencode_package_deps",
+      "community": 3,
+      "norm_label": "package dependencies"
+    },
+    {
+      "label": "@opencode-ai/plugin v1.17.11",
+      "file_type": "concept",
+      "source_file": ".opencode/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "opencode_package_at_opencode_ai_plugin",
+      "community": 3,
+      "norm_label": "@opencode-ai/plugin v1.17.11"
+    },
+    {
+      "label": "tool.execute.before",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "10-19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plugins_graphify_toolexecutebefore",
+      "community": 3,
+      "norm_label": "tool.execute.before"
+    },
+    {
+      "label": "Knowledge Graph at graphify-out/",
+      "file_type": "concept",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plugins_graphify_knowledge_graph",
+      "community": 3,
+      "norm_label": "knowledge graph at graphify-out/"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_plugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "opencode_package",
+      "target": "opencode_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "opencode_package_dependencies",
+      "target": "opencode_package_dependencies_opencode_ai_plugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "plugins_graphify",
+      "target": "plugins_graphify_graphifyplugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/opencode.json",
+      "source_location": "4",
+      "weight": 1.0,
+      "source": "opencode_opencode_config",
+      "target": "plugins_graphify_graphifyplugin"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plugins_graphify_graphifyplugin",
+      "target": "opencode_package_at_opencode_ai_plugin"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "6-21",
+      "weight": 1.0,
+      "source": "plugins_graphify_graphifyplugin",
+      "target": "plugins_graphify_toolexecutebefore"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plugins_graphify_knowledge_graph",
+      "target": "plugins_graphify_graphifyplugin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vscode_settings",
+      "target": "vscode_settings_java_compile_nullanalysis_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket",
+      "target": "albionmarket_albionmarket_albionmarket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket",
+      "target": "javaplugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_albionmarket",
+      "target": "albionmarket_albionmarket_albionmarket_ondisable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_albionmarket",
+      "target": "albionmarket_albionmarket_albionmarket_onenable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_albionmarket",
+      "target": "javaplugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "1",
+      "weight": 1.0,
+      "source": "resources_plugin_albionmarket",
+      "target": "albionmarket_albionmarket_albionmarket"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_albionmarket_onenable",
+      "target": "managers_pluginmanager_pluginmanager_getinstance"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_albionmarket_onenable",
+      "target": "managers_pluginmanager_pluginmanager_initialize"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "albionmarket_albionmarket_albionmarket_onenable",
+      "target": "override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "albionmarket_albionmarket_albionmarket_ondisable",
+      "target": "override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "listeners_playerlistener",
+      "target": "eventhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "listeners_playerlistener",
+      "target": "listener",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "listeners_playerlistener",
+      "target": "listeners_playerlistener_playerlistener",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "listeners_playerlistener",
+      "target": "playerjoinevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "16",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_onEnable",
+      "target": "listeners_playerlistener_playerlistener"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "listeners_playerlistener_playerlistener",
+      "target": "concept_event_listener_pattern"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "listeners_playerlistener_playerlistener",
+      "target": "listener",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "listeners_playerlistener_playerlistener",
+      "target": "listeners_playerlistener_playerlistener_onplayerjoin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "listeners_playerlistener_playerlistener_onplayerjoin",
+      "target": "eventhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "listeners_playerlistener_playerlistener_onplayerjoin",
+      "target": "playerjoinevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "managers_pluginmanager",
+      "target": "managers_pluginmanager_pluginmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "managers_pluginmanager_pluginmanager",
+      "target": "concept_singleton_pattern"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "4",
+      "weight": 1.0,
+      "source": "managers_pluginmanager_pluginmanager",
+      "target": "managers_pluginmanager_getInstance"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "managers_pluginmanager_pluginmanager_getinstance",
+      "target": "managers_pluginmanager_pluginmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "managers_pluginmanager_pluginmanager",
+      "target": "managers_pluginmanager_pluginmanager_initialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "utils_utils",
+      "target": "utils_utils_utils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "utils_utils_utils",
+      "target": "utils_utils_utils_colorize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "utils_utils_utils_colorize",
+      "target": "string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/AlbionMarket.java",
+      "source_location": "13",
+      "weight": 1.0,
+      "source": "albionmarket_albionmarket_onEnable",
+      "target": "managers_pluginmanager_getInstance"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/managers/PluginManager.java",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "managers_pluginmanager_initialize",
+      "target": "albionmarket_albionmarket_onEnable"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/listeners/PlayerListener.java",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "listeners_playerlistener_onPlayerJoin",
+      "target": "concept_event_listener_pattern"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:/Projects/AlbionMarket/src/main/java/com/perseus/albionmarket/utils/Utils.java",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "utils_utils_colorize",
+      "target": "concept_hex_chat_color"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "7",
+      "weight": 1.0,
+      "source": "resources_plugin_albionmarket",
+      "target": "resources_plugin_citizens"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "7",
+      "weight": 1.0,
+      "source": "resources_plugin_albionmarket",
+      "target": "resources_plugin_placeholderapi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:/Projects/AlbionMarket/src/main/resources/plugin.yml",
+      "source_location": "6",
+      "weight": 1.0,
+      "source": "resources_plugin_albionmarket",
+      "target": "resources_plugin_vault"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".opencode/opencode.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "opencode_opencode_config",
+      "target": "opencode_package_deps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/package.json",
+      "source_location": "3",
+      "weight": 1.0,
+      "source": "opencode_package_deps",
+      "target": "opencode_package_at_opencode_ai_plugin"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "12",
+      "weight": 1.0,
+      "source": "plugins_graphify_toolexecutebefore",
+      "target": "plugins_graphify_knowledge_graph"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "plugin_bootstrap_flow",
+      "label": "Plugin Bootstrap Flow",
+      "nodes": [
+        "albionmarket_albionmarket_onEnable",
+        "managers_pluginmanager_getInstance",
+        "managers_pluginmanager_initialize",
+        "listeners_playerlistener_PlayerListener"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Projects\\AlbionMarket\\src\\main\\java\\com\\perseus\\albionmarket\\AlbionMarket.java"
+    },
+    {
+      "id": "plugin_lifecycle_hooks",
+      "label": "Bukkit Plugin Lifecycle Hooks",
+      "nodes": [
+        "albionmarket_albionmarket_AlbionMarket",
+        "albionmarket_albionmarket_onEnable",
+        "albionmarket_albionmarket_onDisable"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Projects\\AlbionMarket\\src\\main\\java\\com\\perseus\\albionmarket\\AlbionMarket.java"
+    },
+    {
+      "id": "graphify_injection_reminder_flow",
+      "label": "Graphify Injection Reminder Mechanism",
+      "nodes": [
+        "opencode_opencode_config",
+        "plugins_graphify_graphifyplugin",
+        "plugins_graphify_knowledge_graph"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/plugins/graphify.js"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+main: com.perseus.albionmarket.AlbionMarket
+version: 1.0.0
+name: AlbionMarket
+author: PerseusJ
+api-version: 1.21
+depend: [Vault]
+soft-depend: [Citizens, PlaceholderAPI]
