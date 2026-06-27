@@ -5,3 +5,19 @@ author: PerseusJ
 api-version: 1.21
 depend: [Vault]
 soft-depend: [Citizens, PlaceholderAPI]
+
+commands:
+  market:
+    description: Main AlbionMarket command
+    usage: /<command> [subcommand]
+    aliases: [am, bazaar]
+
+permissions:
+  albionmarket.use:
+    description: Allows use of market NPCs and trading
+    default: true
+  albionmarket.admin:
+    description: Allows administrative market commands
+    default: op
+    children:
+      albionmarket.use: true

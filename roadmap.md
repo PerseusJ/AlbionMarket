@@ -88,7 +88,7 @@ Each major version baseline (V1.0.0–V5.0.0) is a **compilable, runnable, playa
 
 **Goal**: Deliver a fully playable, end-to-end marketplace experience. Players can visit an NPC, open a GUI, place buy and sell orders, have those orders match asynchronously, and claim their earnings/items from a localized virtual mailbox.
 
-### V1.0.0 — Core Plugin Foundation (Baseline)
+### V1.0.0 — Core Plugin Foundation (Baseline) [COMPLETED]
 - Plugin main class (`AlbionMarket.java`) with `onEnable` / `onDisable` lifecycle
 - Async execution framework (`AsyncExecutor.java`) establishing thread-safety patterns
 - `ConfigManager.java` parsing `config.yml` with hierarchical defaults

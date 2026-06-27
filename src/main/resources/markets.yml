@@ -1,0 +1,17 @@
+desert_bazaar:
+  display-name: "<gradient:#FFD700:#FF8C00>Desert Bazaar</gradient>"
+  setup-fee-percent: 2.5
+  transaction-tax-percent: 8.0
+  max-order-duration-days: 14
+  max-active-orders-per-player: 20
+
+mountain_exchange:
+  display-name: "<gradient:#87CEEB:#4682B4>Mountain Exchange</gradient>"
+  setup-fee-percent: 2.5
+  transaction-tax-percent: 4.0
+  max-order-duration-days: 30
+  max-active-orders-per-player: 50
+
+forest_market:
+  display-name: "<green>Forest Market</green>"
+  inherit-defaults: true
