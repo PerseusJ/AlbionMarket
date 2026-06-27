@@ -1,0 +1,52 @@
+database:
+  type: sqlite
+  sqlite:
+    file: market.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: albionmarket
+    username: root
+    password: ""
+  pool:
+    max-pool-size: 10
+    connection-timeout-ms: 5000
+    idle-timeout-ms: 600000
+
+economy:
+  default-setup-fee-percent: 2.5
+  default-transaction-tax-percent: 6.0
+  default-max-order-duration-days: 30
+  default-max-active-orders-per-player: 30
+  currency-name-singular: "silver"
+  currency-name-plural: "silver"
+  min-price-per-unit: 1
+  max-price-per-unit: 999999999
+  tax-permission-multipliers:
+    albionmarket.tax.premium: 0.5
+    albionmarket.tax.vip: 0.25
+  min-effective-tax-percent: 0.0
+
+item-identity:
+  pdc-keys-to-hash: []
+  require-full-durability: true
+
+cleanup:
+  expired-order-check-interval-minutes: 60
+  batch-size: 100
+
+notifications:
+  login-notification-enabled: true
+  login-notification-delay-ticks: 60
+  login-notification-sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  online-trade-alert-sound: BLOCK_NOTE_BLOCK_PLING
+
+placeholders:
+  cache-ttl-seconds: 30
+
+api:
+  enabled: false
+  port: 8780
+  bind-address: "127.0.0.1"
+  auth-token: "CHANGE_ME"
+  rate-limit-per-minute: 60

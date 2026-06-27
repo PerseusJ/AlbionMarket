@@ -1,0 +1,29 @@
+prefix: "<dark_gray>[</dark_gray><gradient:#FFD700:#FF8C00>Market</gradient><dark_gray>]</dark_gray> "
+
+order:
+  sell-created: "{prefix}<green>Sell order placed!</green> <gray>{quantity}x {item_name} @ {price}/ea</gray> <dark_gray>|</dark_gray> <red>Setup fee: {setup_fee}</red>"
+  buy-created: "{prefix}<green>Buy order placed!</green> <gray>{quantity}x {item_name} @ {price}/ea</gray> <dark_gray>|</dark_gray> <red>Total locked: {total} + {setup_fee} fee</red>"
+  cancelled: "{prefix}<yellow>Order #{order_id} cancelled.</yellow> <gray>Assets routed to your mailbox at {node_name}.</gray>"
+  filled: "{prefix}<gold>Order #{order_id} has been filled!</gold> <gray>Visit {node_name} to collect.</gray>"
+  expired: "{prefix}<gray>Order #{order_id} has expired.</gray> <gray>Assets routed to your mailbox at {node_name}.</gray>"
+  insufficient-funds: "{prefix}<red>Insufficient funds.</red> <gray>You need {total} but only have {balance}.</gray>"
+  inventory-full: "{prefix}<red>Your inventory is full.</red> <gray>Items remain in your mailbox.</gray>"
+  damaged-item: "{prefix}<red>Items must be at full durability to list on the market.</red>"
+  max-orders: "{prefix}<red>You have reached the maximum number of active orders ({max}) at this market.</red>"
+
+trade:
+  quick-buy-success: "{prefix}<green>Purchased {quantity}x {item_name} for {total}!</green>"
+  quick-sell-success: "{prefix}<green>Sold {quantity}x {item_name} for {net_payout}!</green> <gray>(Tax: {tax})</gray>"
+  order-unavailable: "{prefix}<red>This order is no longer available.</red>"
+
+mailbox:
+  claimed-item: "{prefix}<green>Claimed {quantity}x {item_name} from {node_name}.</green>"
+  claimed-cash: "{prefix}<green>Claimed {amount} from {node_name}.</green>"
+  login-notification: "{prefix}<yellow>You have unclaimed assets at <hover:show_text:'{details}'><gold>{count} market(s)</gold></hover>!</yellow>"
+
+admin:
+  linked: "{prefix}<green>Entity linked to market node: {node_name}</green>"
+  unlinked: "{prefix}<yellow>Entity unlinked from market.</yellow>"
+  reloaded: "{prefix}<green>Configuration reloaded.</green>"
+  invalid-node: "{prefix}<red>Node ID '{node_id}' does not exist in markets.yml.</red>"
+  no-permission: "{prefix}<red>You don't have permission to use this command.</red>"

@@ -1,8 +1,0 @@
-/target/
-/.idea/
-*.iml
-.DS_Store
-.opencode/
-
-# Graphify
-/graphify-out/
