@@ -8,6 +8,11 @@ import com.perseus.albionmarket.config.ConfigManager;
 import com.perseus.albionmarket.config.MarketNodeRegistry;
 import com.perseus.albionmarket.config.MessageManager;
 import com.perseus.albionmarket.database.DatabaseManager;
+import com.perseus.albionmarket.economy.EconomyBridge;
+import com.perseus.albionmarket.economy.EscrowManager;
+import com.perseus.albionmarket.economy.FeeCalculator;
+import com.perseus.albionmarket.identity.ItemHasher;
+import com.perseus.albionmarket.identity.ItemSerializer;
 import com.perseus.albionmarket.listeners.EntityInteractionListener;
 import com.perseus.albionmarket.listeners.PlayerListener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,6 +25,13 @@ public class AlbionMarket extends JavaPlugin {
     private MessageManager messageManager;
     private DatabaseManager databaseManager;
     private AsyncExecutor asyncExecutor;
+
+    // V1.0.1 — Economy Bridge & Item Identity
+    private EconomyBridge economyBridge;
+    private FeeCalculator feeCalculator;
+    private EscrowManager escrowManager;
+    private ItemHasher itemHasher;
+    private ItemSerializer itemSerializer;
 
     public static AlbionMarket getInstance() {
         return instance;
@@ -44,6 +56,17 @@ public class AlbionMarket extends JavaPlugin {
         this.databaseManager = new DatabaseManager(this);
         this.databaseManager.initialize();
 
+        // V1.0.1 — Economy Bridge (must be initialized after all plugins are loaded)
+        this.economyBridge = new EconomyBridge(this);
+        this.economyBridge.initialize();
+
+        this.feeCalculator = new FeeCalculator(configManager);
+        this.escrowManager = new EscrowManager(this, economyBridge);
+
+        // V1.0.1 — Item Identity
+        this.itemHasher = new ItemHasher(this);
+        this.itemSerializer = new ItemSerializer(this);
+
         getServer().getPluginManager().registerEvents(new EntityInteractionListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 
@@ -63,6 +86,10 @@ public class AlbionMarket extends JavaPlugin {
         getLogger().info("AlbionMarket disabled!");
     }
 
+    // -----------------------------------------------------------------------
+    // Getters — V1.0.0
+    // -----------------------------------------------------------------------
+
     public ConfigManager getConfigManager() {
         return configManager;
     }
@@ -81,5 +108,29 @@ public class AlbionMarket extends JavaPlugin {
 
     public AsyncExecutor getAsyncExecutor() {
         return asyncExecutor;
+    }
+
+    // -----------------------------------------------------------------------
+    // Getters — V1.0.1
+    // -----------------------------------------------------------------------
+
+    public EconomyBridge getEconomyBridge() {
+        return economyBridge;
+    }
+
+    public FeeCalculator getFeeCalculator() {
+        return feeCalculator;
+    }
+
+    public EscrowManager getEscrowManager() {
+        return escrowManager;
+    }
+
+    public ItemHasher getItemHasher() {
+        return itemHasher;
+    }
+
+    public ItemSerializer getItemSerializer() {
+        return itemSerializer;
     }
 }

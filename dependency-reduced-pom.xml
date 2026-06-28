@@ -4,7 +4,7 @@
   <groupId>com.perseus.albionmarket</groupId>
   <artifactId>AlbionMarket</artifactId>
   <name>AlbionMarket</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <url>http://www.example.com</url>
   <build>
     <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
@@ -85,8 +85,24 @@
       <id>spigot-repo</id>
       <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
     </repository>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
   </repositories>
   <dependencies>
+    <dependency>
+      <groupId>com.github.MilkBowl</groupId>
+      <artifactId>VaultAPI</artifactId>
+      <version>1.7</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>bukkit</artifactId>
+          <groupId>org.bukkit</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>

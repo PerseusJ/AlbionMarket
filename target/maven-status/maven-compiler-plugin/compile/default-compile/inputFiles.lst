@@ -12,7 +12,13 @@ C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\database\Databas
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\database\MySQLProvider.java
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\database\SchemaManager.java
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\database\SQLiteProvider.java
+C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\economy\EconomyBridge.java
+C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\economy\EscrowManager.java
+C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\economy\FeeCalculator.java
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\events\MarketNodeInteractEvent.java
+C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\identity\ItemHasher.java
+C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\identity\ItemIdentity.java
+C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\identity\ItemSerializer.java
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\listeners\EntityInteractionListener.java
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\listeners\PlayerListener.java
 C:\Projects\AlbionMarket\src\main\java\com\perseus\albionmarket\utils\Utils.java
