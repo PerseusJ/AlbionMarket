@@ -11,10 +11,13 @@ import com.perseus.albionmarket.database.DatabaseManager;
 import com.perseus.albionmarket.economy.EconomyBridge;
 import com.perseus.albionmarket.economy.EscrowManager;
 import com.perseus.albionmarket.economy.FeeCalculator;
+import com.perseus.albionmarket.engine.MatchingEngine;
+import com.perseus.albionmarket.engine.OrderValidator;
 import com.perseus.albionmarket.identity.ItemHasher;
 import com.perseus.albionmarket.identity.ItemSerializer;
 import com.perseus.albionmarket.listeners.EntityInteractionListener;
 import com.perseus.albionmarket.listeners.PlayerListener;
+import com.perseus.albionmarket.orders.OrderManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class AlbionMarket extends JavaPlugin {
@@ -32,6 +35,11 @@ public class AlbionMarket extends JavaPlugin {
     private EscrowManager escrowManager;
     private ItemHasher itemHasher;
     private ItemSerializer itemSerializer;
+
+    // V1.0.2 — Core Matching Engine
+    private OrderValidator orderValidator;
+    private MatchingEngine matchingEngine;
+    private OrderManager orderManager;
 
     public static AlbionMarket getInstance() {
         return instance;
@@ -66,6 +74,11 @@ public class AlbionMarket extends JavaPlugin {
         // V1.0.1 — Item Identity
         this.itemHasher = new ItemHasher(this);
         this.itemSerializer = new ItemSerializer(this);
+
+        // V1.0.2 — Core Matching Engine
+        this.orderValidator = new OrderValidator(this);
+        this.matchingEngine = new MatchingEngine(this);
+        this.orderManager = new OrderManager(this, matchingEngine, orderValidator);
 
         getServer().getPluginManager().registerEvents(new EntityInteractionListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerListener(), this);
@@ -132,5 +145,21 @@ public class AlbionMarket extends JavaPlugin {
 
     public ItemSerializer getItemSerializer() {
         return itemSerializer;
+    }
+
+    // -----------------------------------------------------------------------
+    // Getters — V1.0.2
+    // -----------------------------------------------------------------------
+
+    public OrderValidator getOrderValidator() {
+        return orderValidator;
+    }
+
+    public MatchingEngine getMatchingEngine() {
+        return matchingEngine;
+    }
+
+    public OrderManager getOrderManager() {
+        return orderManager;
     }
 }

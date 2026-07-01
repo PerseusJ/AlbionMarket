@@ -101,7 +101,7 @@ Each major version baseline (V1.0.0–V5.0.0) is a **compilable, runnable, playa
 - PDC entity tagging via `/market admin link <node_id>` command skeleton
 - `Utils.java` with formatting and color code utilities
 
-### V1.0.1 — Economy Bridge & Item Identity
+### V1.0.1 — Economy Bridge & Item Identity [COMPLETED]
 - `EconomyBridge.java` wrapping Vault API, converting internal `long` ↔ Vault `double` with half-up rounding
 - `FeeCalculator.java` computing setup fees and transaction taxes from config
 - `EscrowManager.java` handling escrow lock/unlock/refund logic
@@ -110,7 +110,7 @@ Each major version baseline (V1.0.0–V5.0.0) is a **compilable, runnable, playa
 - `ItemSerializer.java` Base64 serialization/deserialization of ItemStacks
 - Durability gate enforcement — items must be at 100% durability to be hashed and listed
 
-### V1.0.2 — Core Matching Engine
+### V1.0.2 — Core Matching Engine [COMPLETED]
 - `MatchingEngine.java` implementing match-on-placement logic with optimistic concurrency
 - `MatchResult.java` and `TradeExecution.java` result value objects
 - `OrderValidator.java` pre-flight validation (funds, inventory space, max orders, price bounds)
